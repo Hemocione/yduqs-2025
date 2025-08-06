@@ -10,27 +10,35 @@
           Para que a gente possa organizar tudo da melhor forma e garantir seu lugar nesse dia incrível,
           é muito importante que você faça sua inscrição. Assim, podemos agendar seu horário e evitar filas.
         </p>
-        <p><strong>⭢️ Inscreva-se aqui:</strong> <a href="#" class="link">[LINK DE INSCRIÇÃO DA FACULDADE]</a></p>
-        <p>
-          Contamos com você para fazer desta a maior campanha de doação que nossa faculdade já viu!
-          E não esqueça de voltar aqui para registrar sua doação para ganhar as horas complementares!
-        </p>
-      </div>
+        <p><strong>⭢️ Inscreva-se aqui:</strong> </p>
+        
   
-      <button class="card-button">
+      <button class="card-button" @click="goToSubscription">
         <div class="card-content">
           <div class="icon-circle">
-            <NuxtImg src="/images/arrow-left.svg" alt="Inscrição" class="drop-icon" />
+            <NuxtImg src="/images/drop.svg" alt="Inscrição" class="drop-icon" />
           </div>
           <span class="card-text">Inscrição</span>
         </div>
       </button>
+
+      <p>
+          Contamos com você para fazer desta a maior campanha de doação que nossa faculdade já viu!
+          E não esqueça de voltar aqui para registrar sua doação para ganhar as horas complementares!
+        </p>
+      </div>
     </div>
   </template>
   
   <script setup>
   const router = useRouter()
   const goBack = () => router.back()
+
+    const config = useRuntimeConfig();
+
+    function goToSubscription() {
+        window.location.href = config.public.subscription;
+    }
   </script>
   
   <style scoped>

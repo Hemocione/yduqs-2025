@@ -23,10 +23,10 @@
         </p>
       </div>
   
-      <button class="card-button">
+      <button class="card-button" @click="goToPossoDoar">
         <div class="card-content">
           <div class="icon-circle">
-            <NuxtImg src="/images/arrow-left.svg" alt="Posso doar" class="drop-icon" />
+            <NuxtImg src="/images/drop.svg" alt="Posso doar" class="drop-icon" />
           </div>
           <span class="card-text">Pré-triagem ou onde doar</span>
         </div>
@@ -37,6 +37,12 @@
   <script setup>
   const router = useRouter()
   const goBack = () => router.back()
+
+  const config = useRuntimeConfig();
+
+    function goToPossoDoar() {
+        window.location.href = config.public.possoDoar;
+    }
   </script>
   
   <style scoped>

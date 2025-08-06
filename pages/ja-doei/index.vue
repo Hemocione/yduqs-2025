@@ -5,11 +5,9 @@
         <p>Sua atitude de doar sangue no <strong>Trote Solidário</strong> foi um gesto gigante de solidariedade e já está fazendo a diferença. Muito obrigado por salvar <strong>4 vidas</strong>!!</p>
         <p>Agora, para o último passo: vamos registrar essa boa ação para que você possa ganhar suas horas complementares. Seu registro é essencial para que a gente possa contabilizar sua doação na campanha e para que você receba seu benefício.</p>
         <p>Para garantir suas <strong>horas de Atividade Acadêmica Complementar (AAC)</strong>, é só acessar o link abaixo e registrar sua doação na nossa plataforma.</p>
-        <p><strong>➡️ Registre sua doação aqui:</strong> [LINK PARA REGISTRO DA DOAÇÃO]</p>
-        <p>É rápido e fácil! Agradecemos mais uma vez por seu ato heroico!!</p>
-      </div>
+        <p><strong>➡️ Registre sua doação aqui:</strong> </p>
   
-      <button class="card-button">
+      <button class="card-button" @click="goToCopas">
         <div class="card-content">
           <div class="icon-circle">
             <NuxtImg src="/images/check.svg" alt="Check" class="drop-icon" />
@@ -17,11 +15,18 @@
           <span class="card-text">Registrar minha doação</span>
         </div>
       </button>
+
+      <p>É rápido e fácil! Agradecemos mais uma vez por seu ato heroico!!</p>
+    </div>
     </div>
   </template>
   
   <script setup>
-  // lógica se necessário
+    const config = useRuntimeConfig();
+
+    function goToCopas() {
+    window.location.href = config.public.copaHemocione;
+    }
   </script>
   
   <style scoped>

@@ -122,7 +122,7 @@
   .drop-icon {
     width: 24px;
     height: 24px;
-    filter: brightness(0) saturate(100%) invert(14%) sepia(91%) saturate(6957%) hue-rotate(356deg) brightness(88%) contrast(117%);
+    /* filter: brightness(0) saturate(100%) invert(14%) sepia(91%) saturate(6957%) hue-rotate(356deg) brightness(88%) contrast(117%); */
   }
   
   .card-text {
