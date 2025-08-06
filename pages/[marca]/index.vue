@@ -43,16 +43,19 @@
     </div>
   </template>
   
-  <script setup>
-  const router = useRouter()
-  
-  const goToVouDoar = () => {
-    router.push('/vou-doar')
-  }
-  
-  const goToJaDoei = () => {
-    router.push('/ja-doei')
-  }
+  <script setup lang="ts">
+  const route = useRoute()
+const router = useRouter()
+
+const marca = route.params.marca as string
+
+const goToVouDoar = () => {
+  router.push(`/${marca}/vou-doar`)
+}
+
+const goToJaDoei = () => {
+  router.push(`/${marca}/ja-doei`)
+}
   </script>
   
   <style scoped>

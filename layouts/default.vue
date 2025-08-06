@@ -2,18 +2,24 @@
     <div class="default-layout">
       <header class="header">
         <div class="logo-and-badge">
+          <!-- Logo Hemocione -->
           <NuxtImg
             src="/images/logo-horizontal-branca.svg"
             alt="Logo Hemocione"
             class="logo"
           />
+
+          <span class="logo-plus">+</span>
+  
+          <!-- Logo da marca dinâmica -->
+          <img
+            v-if="marcaLogo"
+            :src="marcaLogo"
+            :alt="`Logo ${campusName}`"
+            class="logo-marca"
+            />
         </div>
       </header>
-  
-      <!-- Faixa Estácio -->
-      <div class="campus-banner">
-        Estácio
-      </div>
   
       <main>
         <NuxtPage />
@@ -22,8 +28,34 @@
   </template>
   
   <script setup lang="ts">
-  import { useRouter } from 'vue-router'
-  const router = useRouter()
+  import { useRoute } from 'vue-router'
+  import { computed } from 'vue'
+  
+  const route = useRoute()
+  
+  // Slugs para nomes legíveis
+  const marcaMap: Record<string, string> = {
+    estacio: 'Estacio',
+    wyden: 'Wyden',
+    idomed: 'Idomed',
+    ibmec: 'Ibmec',
+  }
+  
+  const slug = computed(() => route.params.marca as string)
+  
+  // Nome legível
+  const campusName = computed(() => marcaMap[slug.value] || null)
+  
+  // Caminho da imagem PNG da marca (ex: /images/logoEstacio.png)
+  const marcaLogo = computed(() => {
+    return slug.value ? `/images/logo${capitalize(slug.value)}.png` : null
+  })
+  
+  // Capitaliza a primeira letra (ex: estacio → Estacio)
+  function capitalize(str: string): string {
+    if (!str) return ''
+    return str.charAt(0).toUpperCase() + str.slice(1)
+  }
   </script>
   
   <style scoped>
@@ -46,24 +78,25 @@
   .logo-and-badge {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
   }
   
   .logo {
     width: 130px;
   }
   
-  /* NOVO: Faixa do nome da instituição */
-  .campus-banner {
-    width: 100%;
-    background-color: white;
-    color: var(--hemo-color-black-100);
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--hemo-color-black-10);
-    font-family: "Roboto", sans-serif;
+  .logo-marca {
+    width: 100px;
+    object-fit: contain;
   }
+
+  .logo-plus {
+  color: white;
+  font-size: 24px;
+  margin: 0 12px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
   </style>
   
