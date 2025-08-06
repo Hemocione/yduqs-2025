@@ -7,9 +7,13 @@
             alt="Logo Hemocione"
             class="logo"
           />
-          <!-- <div class="hemo-badge">POSSO DOAR</div> -->
         </div>
       </header>
+  
+      <!-- Faixa Estácio -->
+      <div class="campus-banner">
+        Estácio
+      </div>
   
       <main>
         <NuxtPage />
@@ -19,7 +23,6 @@
   
   <script setup lang="ts">
   import { useRouter } from 'vue-router'
- 
   const router = useRouter()
   </script>
   
@@ -50,14 +53,17 @@
     width: 130px;
   }
   
-  .hemo-badge {
-    background-color: var(--hemo-color-primary);
-    color: white;
-    border-radius: 9999px;
-    padding: 4px 12px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    letter-spacing: 0.05em;
+  /* NOVO: Faixa do nome da instituição */
+  .campus-banner {
+    width: 100%;
+    background-color: white;
+    color: var(--hemo-color-black-100);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--hemo-color-black-10);
+    font-family: "Roboto", sans-serif;
   }
   </style>
   
