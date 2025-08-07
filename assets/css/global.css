@@ -75,7 +75,7 @@
   
   html,
   body {
-    background-color: var(--hemo-color-black-10);
+    background-color: var(--hemo-color-white);
     color: var(--hemo-color-secondary);
     margin: 0;
     padding: 0;

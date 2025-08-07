@@ -30,16 +30,18 @@
   </script>
   
   <style scoped>
-  .ja-doei-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding: 24px 16px;
-    min-height: calc(100dvh - var(--navbar-height));
-    background-color: var(--hemo-color-black-5);
-  }
-  
+ .ja-doei-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px 24px 32px;
+  min-height: 100dvh;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
   .info-text {
     max-width: 600px;
     color: #3c4043;

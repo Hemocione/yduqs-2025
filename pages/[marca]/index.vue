@@ -60,16 +60,18 @@ const goToJaDoei = () => {
   
   <style scoped>
   .eligibility-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding: 24px 16px;
-    background-color: var(--hemo-color-black-5);
-    min-height: calc(100dvh - var(--navbar-height));
-    overflow-y: auto;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  background-color: var(--hemo-color-black-5);
+  padding: 0 24px 32px 24px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+
   .intro-text {
     max-width: 600px;
     color: #3c4043;
