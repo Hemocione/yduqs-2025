@@ -22,12 +22,30 @@
   </template>
   
   <script setup>
-    const config = useRuntimeConfig();
+import { useRoute } from 'vue-router'
 
-    function goToCopas() {
-    window.location.href = config.public.copaHemocione;
-    }
-  </script>
+const config = useRuntimeConfig()
+const route = useRoute()
+
+const copasPaths = {
+  ibmec: 'trote-solidario-ibmec-20252',
+  wyden: 'wyden-ou-trote-solidario-252',
+  idomed: 'trote-solidario-idomed-20252',
+  estacio: 'wyden-ou-trote-solidario-20252'
+}
+
+function goToCopas() {
+  const marca = route.params.marca?.toString().toLowerCase()
+  const path = copasPaths[marca]
+
+  if (path) {
+    window.location.href = `${config.public.copaHemocioneBase}${path}`
+  } else {
+    console.error('Marca não encontrada no mapeamento:', marca)
+  }
+}
+</script>
+
   
   <style scoped>
  .ja-doei-page {

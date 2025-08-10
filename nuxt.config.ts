@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      copaHemocione: "https://copa.hemocione.com.br/",
+      copaHemocioneBase: "https://copa.hemocione.com.br/competition/",
       possoDoar: "https://possodoar.hemocione.com.br/",
       subscriptionBase: "https://eventos.hemocione.com.br/",
     },

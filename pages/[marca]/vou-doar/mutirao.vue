@@ -28,7 +28,7 @@
           <div class="icon-circle">
             <NuxtImg src="/images/drop.svg" alt="Posso doar" class="drop-icon" />
           </div>
-          <span class="card-text">Pré-triagem ou onde doar</span>
+          <span class="card-text">Pré-triagem</span>
         </div>
       </button>
     </div>
