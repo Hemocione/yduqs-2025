@@ -30,16 +30,22 @@
     </div>
   </template>
   
-  <script setup>
-  const router = useRouter()
-  const goBack = () => router.back()
-
-    const config = useRuntimeConfig();
-
-    function goToSubscription() {
-        window.location.href = config.public.subscription;
-    }
-  </script>
+  <script setup lang="ts">
+  const route  = useRoute()
+  const config = useRuntimeConfig()
+  
+  const marca = (route.params.marca as string)?.toLowerCase()
+  
+  const subscriptionUrl = computed(() => {
+    const base = config.public.subscriptionBase
+    const qs   = new URLSearchParams({ search: marca })
+    return `${base}/?${qs.toString()}`
+  })
+  
+  function goToSubscription() {
+    window.location.href = subscriptionUrl.value
+  }
+  </script>  
   
   <style scoped>
   .coleta-page {

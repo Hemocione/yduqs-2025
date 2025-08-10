@@ -34,7 +34,6 @@ import { computed, watchEffect } from "vue";
 const route = useRoute();
 const router = useRouter();
 
-// Slugs para nomes legíveis
 const marcaMap: Record<string, string> = {
   estacio: "Estácio",
   wyden: "Wyden",
@@ -44,7 +43,6 @@ const marcaMap: Record<string, string> = {
 
 const slug = computed(() => route.params.marca as string);
 
-// Nome legível
 const campusName = computed(() => marcaMap[slug.value] || null);
 
 // Se não houver campusName válido, redireciona para estacio
@@ -58,12 +56,10 @@ useHead({
   title: campusName.value ? `Hemocione + ${campusName.value}` : "Hemocione",
 });
 
-// Caminho da imagem PNG da marca (ex: /images/logoEstacio.png)
 const marcaLogo = computed(() => {
   return slug.value ? `/images/logo${capitalize(slug.value)}.png` : null;
 });
 
-// Capitaliza a primeira letra (ex: estacio → Estacio)
 function capitalize(str: string): string {
   if (!str) return "";
   return str.charAt(0).toUpperCase() + str.slice(1);

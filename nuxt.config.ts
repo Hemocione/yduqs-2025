@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     public: {
       copaHemocione: "https://copa.hemocione.com.br/",
       possoDoar: "https://possodoar.hemocione.com.br/",
-      subscription: "https://eventos.hemocione.com.br/",
+      subscriptionBase: "https://eventos.hemocione.com.br/",
     },
   },
 
