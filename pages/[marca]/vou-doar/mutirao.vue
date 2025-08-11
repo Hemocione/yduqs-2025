@@ -10,18 +10,13 @@
           Dúvidas como "preciso estar em jejum?" ou "quem fez tatuagem pode doar?" são super comuns.
         </p>
         <p>
-          Pensando nisso, criamos um checklist rápido para te ajudar a se preparar. Acesse o link e confira!
-        </p>
-        <p><strong>⭢️ Verifique os pré-requisitos aqui:</strong> <a href="#" class="link">[LINK PARA A PÁGINA DE PRÉ-REQUISITOS]</a></p>
-        <p>
-          <strong>Atenção:</strong> Este link é um guia para te ajudar, mas ele não substitui a triagem oficial e a entrevista
-          que serão realizadas pelo profissional de saúde no banco de sangue, combinado?
+          Pensando nisso, criamos um checklist rápido para te ajudar a se preparar. <strong>Acesse o link e confira!</strong>
         </p>
         <p>
           Contamos com você para fazer desta a maior campanha de doação que nossa faculdade já viu!
           E não esqueça de voltar aqui para registrar sua doação para ganhar as horas complementares!
         </p>
-      </div>
+    
   
       <button class="card-button" @click="goToPossoDoar">
         <div class="card-content">
@@ -31,6 +26,12 @@
           <span class="card-text">Pré-triagem</span>
         </div>
       </button>
+
+      <p>
+          <strong>Atenção:</strong> Este link é um guia para te ajudar, mas ele não substitui a triagem oficial e a entrevista
+          que serão realizadas pelo profissional de saúde no banco de sangue, combinado?
+        </p>
+      </div>
     </div>
   </template>
   

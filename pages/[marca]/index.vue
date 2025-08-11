@@ -11,7 +11,7 @@
         <p><strong>Ao entrar nessa com a gente, você:</strong></p>
         <ul>
           <li>💉 Ajuda a alcançar nossa meta de <strong>4.000 bolsas de sangue</strong>, que podem salvar até <strong>16.000 vidas</strong>.</li>
-          <li>🎓 Ganha <strong>40 HORAS COMPLEMENTARES</strong> para turbinar sua graduação.</li>
+          <li>🎓 Ganha <strong>HORAS COMPLEMENTARES</strong> para turbinar sua graduação.</li>
           <li>❤️ Faz parte de um movimento incrível de solidariedade em todo o país.</li>
         </ul>
         <p><strong>Agora, me conta! Você já fez a sua doação?</strong></p>
