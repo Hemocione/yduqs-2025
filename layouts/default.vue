@@ -11,10 +11,15 @@
 
           <span class="logo-plus">+</span>
 
-          <img
+          <!-- <img
             v-if="marcaLogo"
             :src="marcaLogo"
             :alt="`Logo ${campusName}`"
+            class="logo-marca"
+          /> -->
+          <img
+            src="/images/logoYduqs.webp"
+            alt="Logo Yduqs"
             class="logo-marca"
           />
         </div>
