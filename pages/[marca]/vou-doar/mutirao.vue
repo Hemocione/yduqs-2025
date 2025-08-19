@@ -2,7 +2,7 @@
     <div class="mutirao-page">
       <div class="content">
         <p>
-          <strong>Que incrível sua atitude de ir até um hemocentro parceiro para fazer sua doação no Trote Solidário!</strong>
+          <strong>Que incrível sua atitude de ir até um hemocentro parceiro para fazer sua doação na Ação Solidária!</strong>
           Você é parte fundamental desta campanha. 👊
         </p>
         <p>

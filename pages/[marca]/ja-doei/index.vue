@@ -2,7 +2,7 @@
     <div class="ja-doei-page">
       <div class="info-text">
         <p><strong>Parabéns, herói/heroína! 🎉</strong></p>
-        <p>Sua atitude de doar sangue no <strong>Trote Solidário</strong> foi um gesto gigante de solidariedade e já está fazendo a diferença. Muito obrigado por salvar <strong>4 vidas</strong>!!</p>
+        <p>Sua atitude de doar sangue na <strong>Ação Solidária</strong> foi um gesto gigante de solidariedade e já está fazendo a diferença. Muito obrigado por salvar <strong>4 vidas</strong>!!</p>
         <p>Agora, para o último passo: vamos registrar essa boa ação para que você possa ganhar suas horas complementares. Seu registro é essencial para que a gente possa contabilizar sua doação na campanha e para que você receba seu benefício.</p>
         <p>Para garantir suas <strong>horas de Atividade Acadêmica Complementar (AAC)</strong>, é só acessar o link abaixo e registrar sua doação na nossa plataforma.</p>
         <p><strong>➡️ Registre sua doação aqui:</strong> </p>

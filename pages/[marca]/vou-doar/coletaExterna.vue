@@ -4,7 +4,7 @@
         <p><strong>Ótima notícia, futuro(a) doador(a)!</strong></p>
         <p>
           Se você prefere a praticidade de doar aqui mesmo, no conforto da sua faculdade,
-          a hora é essa! O banco de sangue vem até nós para uma coleta especial do Trote Solidário.
+          a hora é essa! O banco de sangue vem até nós para uma coleta especial da Ação Solidária.
         </p>
         <p>
           Para que a gente possa organizar tudo da melhor forma e garantir seu lugar nesse dia incrível,

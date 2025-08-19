@@ -1,7 +1,7 @@
 <template>
     <div class="vou-doar-page">
       <div class="intro-text">
-        <p><strong>E aí, futuro doador(a), tudo pronto para fazer a diferença no Trote Solidário?</strong></p>
+        <p><strong>E aí, futuro doador(a), tudo pronto para fazer a diferença na Ação Solidária?</strong></p>
         <p>
           Sua decisão de doar sangue já é um golaço! Agora, só falta um detalhe pra gente organizar essa corrente do bem e te orientar aos próximos passos:
         </p>

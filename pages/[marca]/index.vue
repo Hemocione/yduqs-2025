@@ -5,13 +5,13 @@
           <strong>Que tal começar a faculdade de um jeito épico, salvando vidas e ainda ganhando horas complementares?</strong>
         </p>
         <p>
-          Essa é a sua chance! O <strong>Trote Solidário 2025.2</strong> já começou, e sua participação é fundamental.
+          Essa é a sua chance! A <strong>Ação Solidária 2025.2</strong> já começou, e sua participação é fundamental.
           Você sabia que no Brasil apenas <strong>1,6%</strong> da população doa sangue anualmente, mas para os estoques ficarem seguros, precisaríamos que <strong>3%</strong> doassem? Essa conta não fecha sem você!
         </p>
         <p><strong>Ao entrar nessa com a gente, você:</strong></p>
         <ul>
           <li>💉 Ajuda a alcançar nossa meta de <strong>4.000 bolsas de sangue</strong>, que podem salvar até <strong>16.000 vidas</strong>.</li>
-          <li>🎓 Ganha <strong>HORAS COMPLEMENTARES</strong> para turbinar sua graduação.</li>
+          <li>🎓 Ganha <strong>40 HORAS COMPLEMENTARES</strong> para turbinar sua graduação.</li>
           <li>❤️ Faz parte de um movimento incrível de solidariedade em todo o país.</li>
         </ul>
         <p><strong>Agora, me conta! Você já fez a sua doação?</strong></p>
