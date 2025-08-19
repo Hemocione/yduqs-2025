@@ -2,7 +2,7 @@
     <div class="mutirao-page">
       <div class="content">
         <p>
-          <strong>Que incrível sua atitude de ir até um hemocentro parceiro para fazer sua doação na Ação Solidária!</strong>
+          <strong>Que incrível sua atitude de ir até um hemocentro parceiro para fazer sua doação {{ preposition }} {{ campaignText }}!</strong>
           Você é parte fundamental desta campanha. 👊
         </p>
         <p>
@@ -35,11 +35,33 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
+  import { computed } from 'vue'
+  
   const router = useRouter()
+  const route = useRoute()
   const goBack = () => router.back()
 
   const config = useRuntimeConfig();
+  const marca = (route.params.marca as string)?.toLowerCase()
+
+  // Computed para determinar o texto da campanha baseado na faculdade
+  const campaignText = computed(() => {
+    if (marca === 'idomed') {
+      return 'Ação Solidária'
+    } else {
+      return 'Trote Solidário'
+    }
+  })
+
+  // Computed para determinar a preposição correta
+  const preposition = computed(() => {
+    if (marca === 'idomed') {
+      return 'à'
+    } else {
+      return 'no'
+    }
+  })
 
     function goToPossoDoar() {
         window.location.href = config.public.possoDoar;

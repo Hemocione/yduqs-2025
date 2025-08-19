@@ -5,7 +5,7 @@
           <strong>Que tal começar a faculdade de um jeito épico, salvando vidas e ainda ganhando horas complementares?</strong>
         </p>
         <p>
-          Essa é a sua chance! A <strong>Ação Solidária 2025.2</strong> já começou, e sua participação é fundamental.
+          Essa é a sua chance! {{ article }} <strong>{{ campaignText }} 2025.2</strong> já começou, e sua participação é fundamental.
           Você sabia que no Brasil apenas <strong>1,6%</strong> da população doa sangue anualmente, mas para os estoques ficarem seguros, precisaríamos que <strong>3%</strong> doassem? Essa conta não fecha sem você!
         </p>
         <p><strong>Ao entrar nessa com a gente, você:</strong></p>
@@ -48,6 +48,24 @@
 const router = useRouter()
 
 const marca = route.params.marca as string
+
+// Computed para determinar o texto da campanha baseado na faculdade
+const campaignText = computed(() => {
+  if (marca.toLowerCase() === 'idomed') {
+    return 'Ação Solidária'
+  } else {
+    return 'Trote Solidário'
+  }
+})
+
+// Computed para determinar o artigo correto baseado no gênero da campanha
+const article = computed(() => {
+  if (marca.toLowerCase() === 'idomed') {
+    return 'A' // feminino para "Ação Solidária"
+  } else {
+    return 'O' // masculino para "Trote Solidário"
+  }
+})
 
 const goToVouDoar = () => {
   router.push(`/${marca}/vou-doar`)

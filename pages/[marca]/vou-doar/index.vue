@@ -1,7 +1,7 @@
 <template>
     <div class="vou-doar-page">
       <div class="intro-text">
-        <p><strong>E aí, futuro doador(a), tudo pronto para fazer a diferença na Ação Solidária?</strong></p>
+        <p><strong>E aí, futuro doador(a), tudo pronto para fazer a diferença {{ preposition }} {{ campaignText }}?</strong></p>
         <p>
           Sua decisão de doar sangue já é um golaço! Agora, só falta um detalhe pra gente organizar essa corrente do bem e te orientar aos próximos passos:
         </p>
@@ -41,8 +41,25 @@
   <script setup lang="ts">
   const router = useRouter()
   const route = useRoute()
-  const marca = route.params.marca as string
+  const marca = (route.params.marca as string)?.toLowerCase()
 
+  // Computed para determinar o texto da campanha baseado na faculdade
+  const campaignText = computed(() => {
+    if (marca === 'idomed') {
+      return 'Ação Solidária'
+    } else {
+      return 'Trote Solidário'
+    }
+  })
+
+  // Computed para determinar a preposição correta
+  const preposition = computed(() => {
+    if (marca === 'idomed') {
+      return 'na'
+    } else {
+      return 'no'
+    }
+  })
   
   const goToColetaExterna = () => {
   router.push(`/${marca}/vou-doar/coletaExterna`)

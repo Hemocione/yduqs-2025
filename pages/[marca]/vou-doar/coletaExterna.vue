@@ -4,7 +4,7 @@
         <p><strong>Ótima notícia, futuro(a) doador(a)!</strong></p>
         <p>
           Se você prefere a praticidade de doar aqui mesmo, no conforto da sua faculdade,
-          a hora é essa! O banco de sangue vem até nós para uma coleta especial da Ação Solidária.
+          a hora é essa! O banco de sangue vem até nós para uma coleta especial {{ preposition }} {{ campaignText }}.
         </p>
         <p>
           Para que a gente possa organizar tudo da melhor forma e garantir seu lugar nesse dia incrível,
@@ -35,6 +35,24 @@
   const config = useRuntimeConfig()
   
   const marca = (route.params.marca as string)?.toLowerCase()
+
+  // Computed para determinar o texto da campanha baseado na faculdade
+  const campaignText = computed(() => {
+    if (marca === 'idomed') {
+      return 'Ação Solidária'
+    } else {
+      return 'Trote Solidário'
+    }
+  })
+
+  // Computed para determinar a preposição correta
+  const preposition = computed(() => {
+    if (marca === 'idomed') {
+      return 'da'
+    } else {
+      return 'do'
+    }
+  })
   
   const subscriptionUrl = computed(() => {
     const base = config.public.subscriptionBase

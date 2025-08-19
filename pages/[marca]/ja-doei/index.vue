@@ -2,7 +2,7 @@
     <div class="ja-doei-page">
       <div class="info-text">
         <p><strong>Parabéns, herói/heroína! 🎉</strong></p>
-        <p>Sua atitude de doar sangue na <strong>Ação Solidária</strong> foi um gesto gigante de solidariedade e já está fazendo a diferença. Muito obrigado por salvar <strong>4 vidas</strong>!!</p>
+        <p>Sua atitude de doar sangue {{ preposition }} <strong>{{ campaignText }}</strong> foi um gesto gigante de solidariedade e já está fazendo a diferença. Muito obrigado por salvar <strong>4 vidas</strong>!!</p>
         <p>Agora, para o último passo: vamos registrar essa boa ação para que você possa ganhar suas horas complementares. Seu registro é essencial para que a gente possa contabilizar sua doação na campanha e para que você receba seu benefício.</p>
         <p>Para garantir suas <strong>horas de Atividade Acadêmica Complementar (AAC)</strong>, é só acessar o link abaixo e registrar sua doação na nossa plataforma.</p>
         <p><strong>➡️ Registre sua doação aqui:</strong> </p>
@@ -21,11 +21,30 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
 import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 
 const config = useRuntimeConfig()
 const route = useRoute()
+const marca = (route.params.marca as string)?.toLowerCase()
+
+// Computed para determinar o texto da campanha baseado na faculdade
+const campaignText = computed(() => {
+  if (marca === 'idomed') {
+    return 'Ação Solidária'
+  } else {
+    return 'Trote Solidário'
+  }
+})
+
+const preposition = computed(() => {
+  if (marca === 'idomed') {
+    return 'no'
+  } else {
+    return 'na'
+  }
+})
 
 const copasPaths = {
   ibmec: 'trote-solidario-ibmec-20252',
@@ -35,7 +54,6 @@ const copasPaths = {
 }
 
 function goToCopas() {
-  const marca = route.params.marca?.toString().toLowerCase()
   const path = copasPaths[marca]
 
   if (path) {
