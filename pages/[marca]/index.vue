@@ -2,10 +2,7 @@
   <div class="eligibility-page">
     <div class="intro-text">
       <p>
-        <strong
-          >Que tal começar a faculdade de um jeito épico, salvando vidas e ainda
-          ganhando horas complementares?</strong
-        >
+        <strong>{{ introText }}</strong>
       </p>
       <p>
         Essa é a sua chance! {{ article }}
@@ -109,6 +106,14 @@ const article = computed(() => {
   } else {
     return "O"; // masculino para "Trote Solidário"
   }
+});
+
+// Computed para texto introdutório condicional
+const introText = computed(() => {
+  const base = "Que tal começar a faculdade de um jeito épico, salvando vidas";
+  const extra = "e ainda ganhando horas complementares";
+
+  return marca.toLowerCase() !== "idomed" ? `${base} ${extra}?` : `${base}?`;
 });
 
 const goToVouDoar = () => {
