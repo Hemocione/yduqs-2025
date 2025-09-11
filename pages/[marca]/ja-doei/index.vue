@@ -78,65 +78,65 @@ function goToCopas() {
   gap: 16px;
 }
 
-  .info-text {
-    max-width: 600px;
-    color: #3c4043;
-    text-align: left;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 16px;
-  }
-  
-  .card-button {
-    border: 1px solid #e0e0e0;
-    border-radius: 16px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    padding: 16px 24px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 420px;
-    cursor: pointer;
-    transition: box-shadow 0.2s ease-in-out;
-  }
-  
-  .card-button:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 16px;
-  }
-  
-  .icon-circle {
-    background-color: #f6f6f6;
-    border-radius: 50%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .drop-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .card-text {
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: #3c4043;
-    flex: 1;
-    text-align: left;
-    line-height: 1.4;
-  }
-  
-  .arrow-icon {
-    min-width: 24px;
-    height: 24px;
-  }
+.info-text {
+  max-width: 600px;
+  color: #3c4043;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.card-button {
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card-button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.icon-circle {
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.card-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #3c4043;
+  flex: 1;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.arrow-icon {
+  min-width: 24px;
+  height: 24px;
+}
   </style>
