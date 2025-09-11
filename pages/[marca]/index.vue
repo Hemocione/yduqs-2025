@@ -123,6 +123,12 @@ const goToJaDoei = () => {
     padding: 10px 20px 16px 20px;
     gap: 8px;
   }
+  
+  .card-button {
+    padding: 12px 18px !important;
+    min-height: 46px !important;
+    height: 46px !important;
+  }
 }
 
 /* Layout para telas normais (sem scroll interno; com padding lateral) */
@@ -148,6 +154,12 @@ const goToJaDoei = () => {
     flex: none;
     overflow: visible;
     padding: 24px 24px 240px 24px;
+  }
+  
+  .card-button {
+    padding: 18px 20px !important;
+    min-height: 60px !important;
+    height: 60px !important;
   }
 }
 

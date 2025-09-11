@@ -118,6 +118,12 @@
     overflow: visible;
     padding: 24px 24px 200px 24px;
   }
+  
+  .card-button {
+    padding: 18px 20px !important;
+    min-height: 60px !important;
+    height: 60px !important;
+  }
 }
 
 /* Para telas normais, remove o scroll interno */
