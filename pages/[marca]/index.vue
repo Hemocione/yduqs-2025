@@ -117,7 +117,7 @@ const goToJaDoei = () => {
 /* iPhones muito pequenos */
 @media (max-height: 600px) {
   .content-scroll {
-    padding: 20px 20px 200px 20px; /* mais área de scroll */
+    padding: 12px 20px 200px 20px; /* reduzido padding superior */
   }
   .fixed-buttons {
     padding: 10px 20px 16px 20px;
@@ -144,16 +144,15 @@ const goToJaDoei = () => {
   flex: 1;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 24px 24px 240px 24px; /* espaço para os botões fixos */
+  padding: 0px 24px 240px 24px; 
   min-height: 0;
 }
 
-/* Telas pequenas: remove scroll interno */
 @media (max-height: 700px) {
   .content-scroll {
     flex: none;
     overflow: visible;
-    padding: 24px 24px 240px 24px;
+    padding: 0px 24px 240px 24px;
   }
   
   .card-button {

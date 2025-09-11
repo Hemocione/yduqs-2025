@@ -107,7 +107,7 @@
   flex: 1;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 24px 24px 200px 24px;
+  padding: 0px 24px 200px 24px; /* reduzido padding superior */
   min-height: 0;
 }
 
@@ -116,7 +116,7 @@
   .content-scroll {
     flex: none;
     overflow: visible;
-    padding: 24px 24px 200px 24px;
+    padding: 0px 24px 200px 24px;
   }
   
   .card-button {
