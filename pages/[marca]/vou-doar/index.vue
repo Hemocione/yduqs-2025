@@ -7,10 +7,10 @@
             Sua decisão de doar sangue já é um golaço! Agora, só falta um detalhe pra gente organizar essa corrente do bem e te orientar aos próximos passos:
           </p>
           <p><strong>Qual será o formato da sua doação?</strong></p>
-          <ul>
+          <ol>
             <li>1.⁠ ⁠Você vai doar na sua própria <strong>FACULDADE</strong> com a vinda do banco de sangue? 🏫</li>
             <li>2.⁠ ⁠Você vai até um <strong>BANCO DE SANGUE</strong> parceiro com a sua galera? 🏥</li>
-          </ul>
+          </ol>
         </div>
       </div>
 
@@ -30,7 +30,7 @@
         <button class="card-button" @click="goToMutirao">
           <div class="card-content">
             <div class="icon-circle">
-              <NuxtImg src="/images/drop.svg" alt="Calendário" class="drop-icon" />
+              <NuxtImg src="/images/drop.svg" alt="" aria-hidden="true" class="drop-icon" />
             </div>
             <span class="card-text">Vou doar em um banco</span>
             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -114,8 +114,8 @@
 /* Para telas pequenas, remove o scroll interno da página */
 @media (max-height: 700px) {
   .content-scroll {
-    flex: none;
-    overflow: visible;
+    flex: 1;
+    overflow-y: auto;
     padding: 0px 24px 200px 24px;
   }
   
@@ -225,7 +225,7 @@
 
 .card-text {
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 550;
   color: #3c4043;
   flex: 1;
   text-align: left;

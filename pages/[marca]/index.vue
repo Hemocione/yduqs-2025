@@ -38,10 +38,10 @@
       <button class="card-button" @click="goToVouDoar">
         <div class="card-content">
           <div class="icon-circle">
-            <NuxtImg src="/images/drop.svg" alt="Gota" class="drop-icon" />
+            <NuxtImg src="/images/drop.svg" alt="" aria-hidden="true" class="drop-icon" />
           </div>
           <span class="card-text">Vou doar</span>
-          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <svg class="arrow-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M9 6L15 12L9 18" stroke="#3C4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </div>
@@ -53,7 +53,7 @@
             <NuxtImg src="/images/check.svg" alt="Check" class="drop-icon" />
           </div>
           <span class="card-text">Já doei!</span>
-          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <svg class="arrow-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M9 6L15 12L9 18" stroke="#3C4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </div>
@@ -264,7 +264,7 @@ const goToJaDoei = () => {
 
 .card-text {
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 550;
   color: #3c4043;
   flex: 1;
   text-align: left;

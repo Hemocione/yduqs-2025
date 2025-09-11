@@ -134,7 +134,7 @@
   
   .card-text {
     font-size: 1.125rem;
-    font-weight: 500;
+    font-weight: 550;
     color: #3c4043;
     flex: 1;
     text-align: left;
