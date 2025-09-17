@@ -81,6 +81,25 @@ function capitalize(str: string): string {
   margin: 0;
 }
 
+/* Para telas pequenas, permite que o header faça scroll */
+@media (max-height: 700px) {
+  .default-layout {
+    height: 100dvh;
+    overflow: hidden;
+  }
+  
+  .eligibility-page {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .header {
+    position: static;
+    flex-shrink: 0;
+  }
+}
+
 .header {
   max-width: 800px;
   margin: 0 auto;
